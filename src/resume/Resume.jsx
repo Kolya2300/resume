@@ -98,14 +98,19 @@ const Resume = () => {
                             )
                         })}
                     </div> : null}
-                {data.education && data.education.length ? <div className={classes.wrapperEducation}>
+                {data.education && data.education.length ?
+                  <div className={classes.wrapperEducation}>
                         <h3 className={classes.educationTitle}>Education</h3>
                         {data.education.map((study) => {
                             return (
                                 <div className={classes.innerEducation}>
-                                    <h4 className={classes.studyTitle}>{study.title + ', ' + study.degree}</h4>
-                                    <p className={classes.studyCity}>{study.city}</p>
-                                    <p className={classes.dateStudy}>{study.start_date} - {study.end_date}</p>
+                                    <div className={classes.dateEducation}>
+                                        <p className={classes.dateJobs}>{study.start_date} - {study.end_date}</p>
+                                    </div>
+                                    <div>
+                                        <h4 className={classes.studyTitle}>{study.title + ', ' + study.degree}</h4>
+                                        <p className={classes.studyCity}>{study.city}</p>
+                                    </div>
                                 </div>
                             )
                         })}

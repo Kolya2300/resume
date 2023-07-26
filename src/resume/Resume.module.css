@@ -1,3 +1,4 @@
+
 .wrapper{
     font-family: 'Century Gothic', 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
     Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Arial, sans-serif;
@@ -10,26 +11,26 @@
     margin: 0;
     font-size: 36px;
     font-weight: 700;
-    color: #9b9b9b;
+    color: #000;
     line-height: 46px;
 }
 .profession{
     font-weight: 500;
-    color: #9b9b9b;
-    line-height: 46px;
+    color: #000;
     margin: 0;
+    margin-bottom: 30px;
 }
 .emailTitle,
 .phoneTitle,
 .urlTitle{
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 700;
     width: 8%;
 }
 .email,
 .phone,
 .url{
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 500;
 }
 .wrapperEmail,
@@ -49,25 +50,26 @@
 }
 .listSkills{
     margin-left: 300px;
-    color: #9b9b9b;
+    color: #000;
 }
 .textAboutUser{
-    color: #9b9b9b;
-    font-size: 12px;
+    color: #000;
+    font-size: 14px;
     margin-bottom: 20px;
 }
 .listUrls{
     display: flex;
     margin-left: 100px;
-    font-size: 12px;
-    color: #9b9b9b;
+    font-size: 14px;
+    color: #000;
     cursor: pointer;
     margin-bottom: 10px;
 }
 .wrapperSkills{
     margin-bottom: 20px;
 }
-.innerExperience{
+.innerExperience,
+.innerEducation{
     display: flex;
     gap: 50px;
     margin-bottom: 20px;
@@ -76,41 +78,44 @@
     margin-bottom: 20px;
 }
 .dateJobs{
-    color: #9b9b9b;
+    color: #000;
     font-size: 14px;
     margin: 0;
 }
 .jobTitle{
     margin: 0;
-    color: #9b9b9b;
+    color: #000;
     font-size: 14px;
 }
 .companyNameAndCity{
-    font-size: 12px;
-    color: #9b9b9b;
+    font-size: 14px;
+    color: #000;
 }
 .description{
-    font-size: 12px;
-    color: #9b9b9b;
-}
-.innerEducation{
-    margin-bottom: 20px;
+    font-size: 14px;
+    color: #000;
 }
 .wrapperEducation{
     margin-bottom: 20px;
 }
 .studyTitle{
     margin: 0 0 10px 0;
-    color: #9b9b9b;
+    color: #000;
     font-size: 14px;
 }
 .studyCity{
     margin: 0 0 10px 0;
-    color: #9b9b9b;
+    color: #000;
     font-size: 14px;
 }
 .dateStudy{
     margin: 0;
-    color: #9b9b9b;
+    color: #000;
     font-size: 14px;
+}
+.dateEducation{
+    width: 10%;
+}
+.wrapperSocial{
+    margin-bottom: 20px;
 }

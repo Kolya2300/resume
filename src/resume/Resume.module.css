@@ -1,0 +1,108 @@
+.nameUser{
+    margin: 0;
+    font-size: 36px;
+    font-weight: 700;
+    color: #9b9b9b;
+    line-height: 46px;
+}
+.profession{
+    font-weight: 500;
+    color: #9b9b9b;
+    line-height: 46px;
+    margin: 0;
+}
+.emailTitle,
+.phoneTitle,
+.urlTitle{
+    font-size: 12px;
+    font-weight: 700;
+    width: 8%;
+}
+.email,
+.phone,
+.url{
+    font-size: 12px;
+    font-weight: 500;
+}
+.wrapperEmail,
+.wrapperPhone{
+    display: flex;
+    align-content: center;
+}
+.skillsTitle,
+.experienceTitle,
+.educationTitle{
+    color: #002e58;
+    margin: 0;
+}
+.experienceTitle,
+.educationTitle{
+    margin-bottom: 20px;
+}
+.listSkills{
+    margin-left: 300px;
+    color: #9b9b9b;
+}
+.textAboutUser{
+    color: #9b9b9b;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+.listUrls{
+    display: flex;
+    margin-left: 100px;
+    font-size: 12px;
+    color: #9b9b9b;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.wrapperSkills{
+    margin-bottom: 20px;
+}
+.innerExperience{
+    display: flex;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+.wrapperExperience{
+    margin-bottom: 20px;
+}
+.dateJobs{
+    color: #9b9b9b;
+    font-size: 14px;
+    margin: 0;
+}
+.jobTitle{
+    margin: 0;
+    color: #9b9b9b;
+    font-size: 14px;
+}
+.companyNameAndCity{
+    font-size: 12px;
+    color: #9b9b9b;
+}
+.description{
+    font-size: 12px;
+    color: #9b9b9b;
+}
+.innerEducation{
+    margin-bottom: 20px;
+}
+.wrapperEducation{
+    margin-bottom: 20px;
+}
+.studyTitle{
+    margin: 0 0 10px 0;
+    color: #9b9b9b;
+    font-size: 14px;
+}
+.studyCity{
+    margin: 0 0 10px 0;
+    color: #9b9b9b;
+    font-size: 14px;
+}
+.dateStudy{
+    margin: 0;
+    color: #9b9b9b;
+    font-size: 14px;
+}

@@ -50,26 +50,27 @@ const Resume = () => {
     }
     return (
         <div className={classes.wrapper}>
-            <div><h1 className={classes.nameUser}>{data.name}</h1>
-                <p className={classes.profession}>{data.profession}</p>
-                <div className={classes.wrapperEmail}>
+            <div>
+                {data.name ? <h1 className={classes.nameUser}>{data.name}</h1> : null}
+                {data.profession ? <p className={classes.profession}>{data.profession}</p> : null}
+                {data.email ? <div className={classes.wrapperEmail}>
                     <p className={classes.emailTitle}>Email</p>
                     <p className={classes.email}>{data.email}</p>
-                </div>
-                <div className={classes.wrapperPhone}>
+                </div> : null}
+                {data.phone ? <div className={classes.wrapperPhone}>
                     <p className={classes.phoneTitle}>Phone</p>
                     <p className={classes.phone}>{data.phone}</p>
-                </div>
-                <div className={classes.wrapperSocial}>
+                </div> : null}
+                {data.url && data.url.length ? <div className={classes.wrapperSocial}>
                     <p className={classes.urlTitle}>Social Links</p>
                     {data.url.map((urls) => {
                         return (
                             <a className={classes.listUrls} href={urls}>{urls}</a>
                         )
                     })}
-                </div>
-                <p className={classes.textAboutUser}>{data.textAboutUser}</p>
-                <div className={classes.wrapperSkills}>
+                </div> : null}
+                {data.textAboutUser ? <p className={classes.textAboutUser}>{data.textAboutUser}</p> : null}
+                {data.skills && data.skills.length ? <div className={classes.wrapperSkills}>
                     <h3 className={classes.skillsTitle}>Skills</h3>
                     <ul className={classes.listSkills}>
                         {data.skills.map((skill) => {
@@ -78,36 +79,38 @@ const Resume = () => {
                             )
                         })}
                     </ul>
-                </div>
-                <div className={classes.wrapperExperience}>
-                    <h3 className={classes.experienceTitle}>Professional Experience</h3>
-                    {data.experience.map((expertise) => {
-                        return (
-                            <div className={classes.innerExperience}>
-                                <div>
-                                    <p className={classes.dateJobs}>{expertise.start_date} - {expertise.end_date}</p>
+                </div> : null}
+                {data.experience && data.experience.length ?
+                    <div className={classes.wrapperExperience}>
+                        <h3 className={classes.experienceTitle}>Professional Experience</h3>
+                        {data.experience.map((expertise) => {
+                            return (
+                                <div className={classes.innerExperience}>
+                                    <div>
+                                        <p className={classes.dateJobs}>{expertise.start_date} - {expertise.end_date}</p>
+                                    </div>
+                                    <div>
+                                        <h4 className={classes.jobTitle}>{expertise.jobTitle}</h4>
+                                        <p className={classes.companyNameAndCity}>{expertise.company + ', ' + expertise.city}</p>
+                                        <p className={classes.description}>{expertise.description}</p>
+                                    </div>
                                 </div>
-                                <div>
-                                    <h4 className={classes.jobTitle}>{expertise.jobTitle}</h4>
-                                    <p className={classes.companyNameAndCity}>{expertise.company + ', ' + expertise.city}</p>
-                                    <p className={classes.description}>{expertise.description}</p>
+                            )
+                        })}
+                    </div> : null}
+                {data.education && data.education.length ? <div className={classes.wrapperEducation}>
+                        <h3 className={classes.educationTitle}>Education</h3>
+                        {data.education.map((study) => {
+                            return (
+                                <div className={classes.innerEducation}>
+                                    <h4 className={classes.studyTitle}>{study.title + ', ' + study.degree}</h4>
+                                    <p className={classes.studyCity}>{study.city}</p>
+                                    <p className={classes.dateStudy}>{study.start_date} - {study.end_date}</p>
                                 </div>
-                            </div>
-                        )
-                    })}
-                </div>
-                <div className={classes.wrapperEducation}>
-                    <h3 className={classes.educationTitle}>Education</h3>
-                    {data.education.map((study) => {
-                        return (
-                            <div className={classes.innerEducation}>
-                                <h4 className={classes.studyTitle}>{study.title + ', ' + study.degree}</h4>
-                                <p className={classes.studyCity}>{study.city}</p>
-                                <p className={classes.dateStudy}>{study.start_date} - {study.end_date}</p>
-                            </div>
-                        )
-                    })}
-                </div>
+                            )
+                        })}
+                    </div>
+                    : null}
             </div>
         </div>
     );

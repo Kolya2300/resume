@@ -11,7 +11,7 @@
     margin: 0;
     font-size: 36px;
     font-weight: 700;
-    color: #000;
+    color: #002e58;
     line-height: 46px;
 }
 .profession{
@@ -22,30 +22,46 @@
 }
 .emailTitle,
 .phoneTitle,
-.urlTitle{
-    font-size: 14px;
+.addressTitle{
+    font-size: 16px;
     font-weight: 700;
-    width: 8%;
+}
+.urlTitle{
+    font-size: 16px;
+    font-weight: 700;
+    width: 100%;
 }
 .email,
 .phone,
+.address,
 .url{
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
 }
 .wrapperEmail,
-.wrapperPhone{
+.wrapperPhone,
+.wrapperAddress{
     display: flex;
     align-content: center;
+    gap: 20px;
+}
+.phoneTitle,
+.phone,
+.addressTitle,
+.address{
+    margin-top: 0;
 }
 .skillsTitle,
 .experienceTitle,
-.educationTitle{
-    color: #002e58;
+.educationTitle,
+.competenciesTitle{
+    color: #000;
     margin: 0;
 }
 .experienceTitle,
-.educationTitle{
+.educationTitle,
+.skillsTitle,
+.competenciesTitle{
     margin-bottom: 20px;
 }
 .listSkills{
@@ -54,13 +70,13 @@
 }
 .textAboutUser{
     color: #000;
-    font-size: 14px;
+    font-size: 16px;
     margin-bottom: 20px;
 }
 .listUrls{
     display: flex;
     margin-left: 100px;
-    font-size: 14px;
+    font-size: 16px;
     color: #000;
     cursor: pointer;
     margin-bottom: 10px;
@@ -77,22 +93,23 @@
 .wrapperExperience{
     margin-bottom: 20px;
 }
-.dateJobs{
+.date{
     color: #000;
-    font-size: 14px;
+    font-size: 16px;
     margin: 0;
+    width: 120px;
 }
 .jobTitle{
     margin: 0;
     color: #000;
-    font-size: 14px;
+    font-size: 16px;
 }
 .companyNameAndCity{
-    font-size: 14px;
+    font-size: 16px;
     color: #000;
 }
 .description{
-    font-size: 14px;
+    font-size: 16px;
     color: #000;
 }
 .wrapperEducation{
@@ -101,21 +118,30 @@
 .studyTitle{
     margin: 0 0 10px 0;
     color: #000;
-    font-size: 14px;
+    font-size: 16px;
 }
 .studyCity{
     margin: 0 0 10px 0;
     color: #000;
-    font-size: 14px;
+    font-size: 16px;
 }
 .dateStudy{
     margin: 0;
     color: #000;
-    font-size: 14px;
-}
-.dateEducation{
-    width: 10%;
+    font-size: 16px;
 }
 .wrapperSocial{
     margin-bottom: 20px;
+}
+.innerSkills{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 170px;
+}
+.wrapperUserInfo{
+    display: flex;
+    gap: 150px;
+}
+.innerCompetencies{
+    margin: 0 0 20px 170px;
 }

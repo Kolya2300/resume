@@ -12,7 +12,7 @@ const Skills = ({data}) => {
     <ul className='list-disc text-[#343434] ml-5'>
       {data.map((skills, index) => {
         return (
-          <li key={index}>{skills.name}</li>
+          <li key={index} className='text-[13px] font-normal leading-5'>{skills.name}</li>
         )
       })}
     </ul>
